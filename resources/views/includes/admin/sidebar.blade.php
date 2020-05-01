@@ -4,7 +4,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-circle-notch"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Small Admin</div>
+        <div class="sidebar-brand-text mx-2">Small</div>
     </a>
 
     <!-- Divider -->
@@ -12,7 +12,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{ route('dashboard') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
@@ -20,7 +20,7 @@
 
     <!-- Nav Item - Users -->
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{ route('users.index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Users</span>
         </a>
@@ -28,7 +28,7 @@
 
     <!-- Nav Item - Articles -->
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{ route('articles.index') }}">
             <i class="fas fa-fw fa-newspaper"></i>
             <span>Articles</span>
         </a>
@@ -36,7 +36,7 @@
 
     <!-- Nav Item - Comments -->
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{ route('comments.index') }}">
             <i class="fas fa-fw fa-comments"></i>
             <span>Comments</span>
         </a>
