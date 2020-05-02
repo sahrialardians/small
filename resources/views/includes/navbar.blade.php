@@ -4,7 +4,7 @@
             <a class="text-muted" href="#">Subscribe</a>
         </div>
         <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Small</a>
+            <a class="blog-header-logo text-dark" href="{{ url('/') }}">Small</a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
             @guest
@@ -20,7 +20,7 @@
                         </svg>
                     </a>
                     <a class="text-muted mr-3" href="{{ route('login') }}">Sign in</a>
-                    <a class="btn btn-md btn-success px-4" href="{{ route('register') }}">Write a Stories</a>
+                    <a class="btn btn-md btn-success px-4" href="{{ route('register') }}">Write Story</a>
                 </form>
             @endguest
 
@@ -50,7 +50,6 @@
                 </form>
             @endauth
         </div>
-        
     </div>
 </header>
 
