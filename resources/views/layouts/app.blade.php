@@ -26,7 +26,6 @@
 <body>
     <div class="container">
         @include('includes.navbar')
-        @include('includes.banner')
     </div>
 
     @yield('content')
