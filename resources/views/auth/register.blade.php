@@ -50,8 +50,14 @@
                     <label for="inputPasswordC">{{ __('Password Confirm') }}</label>
                 </div>
         
-                <button class="btn btn-lg btn-primary btn-block" type="submit">{{ __('Register') }}</button>
-        
+                <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">{{ __('Register') }}</button>
+                @if (Route::has('login'))
+                    <p class="d-inline text-muted">Already have an account?</p>
+                    <a class="btn-link" href="{{ route('login') }}">
+                        {{ __('Sign in') }}
+                    </a>
+                @endif
+
                 <p class="mt-5 mb-3 text-muted text-center">&copy; 2020 | Small</p>  
             </form>
         </div>
