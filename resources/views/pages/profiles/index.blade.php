@@ -1,4 +1,4 @@
-@extends('layouts.profile')
+@extends('layouts.app')
 
 @section('content')
 <main class="container">
@@ -8,7 +8,8 @@
                 <div class="media">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">{{ Auth::user()->name }}</h5>
-                        <p>{{ Auth::user()->profile->bio }}</p>
+                        <p>{{ Auth::user()->email }}</p>
+                        <p>{{ Auth::user()->role }}</p>
                     </div>
                     <img src="" class="ml-3">
                 </div>
