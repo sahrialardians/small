@@ -38,7 +38,7 @@
                                 <div class="dropdown-menu" aria-labelledby="menus">
                                     <a class="dropdown-item" href="#">New Post</a>
                                     <a class="dropdown-item" href="#">Posts</a>
-                                    <a class="dropdown-item" href="">Articles</a>
+                                    <a class="dropdown-item" href="{{ route('articles.index') }}">Articles</a>
                                 <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('profile.index') }}">Profile</a>
                                     <a class="dropdown-item" href="#">Setting</a>
